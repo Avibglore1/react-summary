@@ -5,6 +5,7 @@ import ShoppingCart from './Components/ShoppingCart'
 import Counter from './Components/Counter'
 import CounterParent from './Components/CounterParent'
 import InputBox from './Components/InputBox'
+import Propdrilling from './Context/Propdrilling'
 
 
 
@@ -12,10 +13,7 @@ function App() {
   return (
     <>
       <h1>App Component</h1>
-      {/* <HeadingParent></HeadingParent> */}
-      {/* <ShoppingCart></ShoppingCart> */}
-      {/* <CounterParent></CounterParent> */}
-      <InputBox></InputBox>
+      <Propdrilling></Propdrilling>
     </>
   )
 }
