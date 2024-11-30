@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
-import { ThemeWrapper } from '../../App';
+
+import { useDarkTheme } from './ThemeContext';
 
 function Footer() {
     console.log('rendered footer');
@@ -16,7 +17,8 @@ function Footer() {
   }
   
   function Option(){
-      const isDark = useContext(ThemeWrapper);
+
+      const {isDark} = useDarkTheme();
       return <div className={`${isDark?'dark':'light'}`}>Option</div>
   }
 
